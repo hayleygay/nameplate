@@ -7,7 +7,10 @@ $('h1').lettering();
 $.backstretch('img/bg.jpg');
 
 //Masonry
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 200
+$('main').masonry({
+  // options
+  itemSelector: 'section',
+  columnWidth: 0,
+  gutter: 10,
+  transitionDuration: '.5s'
 });
